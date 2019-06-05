@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-toastyplugin" version="0.0.1">
+        id="cordova-plugin-testplugin" version="0.0.1">
     <name>CordovaTestPlugin</name>
 
     <description>An Cordova plugin that allows users to display an alert dialog on the screen.</description>
