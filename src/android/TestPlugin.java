@@ -52,7 +52,11 @@ public class TestPlugin extends CordovaPlugin {
 
       AlertDialog.Builder builder = new AlertDialog.Builder(activity);
       builder.setMessage(message)
-              .setPositiveButton("OK", (dialog, id) -> dialog.dismiss());
+              .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                  public void onClick(DialogInterface dialog, int id) {
+                      dialog.dismiss();
+                  }
+              });
 
       final AlertDialog dialog = builder.create();
       dialog.show();
