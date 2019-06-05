@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-toastyplugin" version="0.0.1">
+    <name>CordovaTestPlugin</name>
+
+    <description>An Cordova plugin that allows users to display an alert dialog on the screen.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,ios,message,alert</keywords>
+    <repo>https://github.com/JamesMahy/cordova-test-plugin.git</repo>
+    <issue>https://github.com/JamesMahy/cordova-test-plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/plugin.js" name="testPlugin">
+        <clobbers target="window.plugins.testPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TestPlugin">
+                <param name="android-package" value="com.cevo.cordova.plugin.TestPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/TestPlugin.java" target-dir="src/com/cevo/cordova/plugin" />
+    </platform>
+</plugin>
