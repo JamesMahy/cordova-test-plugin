@@ -24,7 +24,14 @@
                 <param name="android-package" value="com.cevo.cordova.plugin.TestPlugin"/>
             </feature>
         </config-file>
-
+        
         <source-file src="src/android/TestPlugin.java" target-dir="src/com/cevo/cordova/plugin" />
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="TestPlugin">
+                <param name="ios-package" value="TestPlugin"/>
+            </feature>
+        </config-file>
     </platform>
 </plugin>

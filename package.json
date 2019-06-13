@@ -1,11 +1,12 @@
 {
   "name": "cordova-plugin-testplugin",
-  "version": "0.0.1",
-  "description": "A Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.",
+  "version": "0.0.2",
+  "description": "A Cordova plugin that allows users to display a popup with a messageon the screen.",
   "cordova": {
     "id": "cordova-plugin-testplugin",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "repository": {
