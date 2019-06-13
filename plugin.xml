@@ -33,5 +33,7 @@
                 <param name="ios-package" value="TestPlugin"/>
             </feature>
         </config-file>
+        <header-file src="src/ios/TestPlugin.h" />
+        <source-file src="src/ios/TestPlugin.m" />
     </platform>
 </plugin>
